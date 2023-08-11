@@ -19,7 +19,7 @@ public class HuTao implements ModInitializer {
     private static final String VARIANT_DIRECTORY = ".weave/hutao";
     private static final Map<String, ResourceLocation[]> variantImages = new HashMap<>();
     private int frame = 0;
-    private String currentVariant = "hutao";
+    private String currentVariant = "MaiSakurajima";
     private boolean switchVariantKeyPressed = false;
     private boolean modActive = true;
 
@@ -80,7 +80,7 @@ public class HuTao implements ModInitializer {
         variantImages.put("miku", loadVariantImagesFor(variant, 36));
         variantImages.put("aqua", loadVariantImagesFor(variant, 17));
         variantImages.put("hutao", loadVariantImagesFor(variant, 27));
-        variantImages.put("Mai Sakurajima", loadVariantImagesFor(variant, 16));
+        variantImages.put("MaiSakurajima", loadVariantImagesFor(variant, 16));
 
     }
 
@@ -107,8 +107,8 @@ public class HuTao implements ModInitializer {
         } else if (currentVariant.equals("aqua")) {
             setVariant("hutao");
         } else if (currentVariant.equals("hutao")) {
-            setVariant("Mai Sakurajima");
-        } else if (currentVariant.equals("Mai Sakurajima"));
+            setVariant("MaiSakurajima");
+        } else if (currentVariant.equals("MaiSakurajima"));
             setVariant("miku");
     }
 
