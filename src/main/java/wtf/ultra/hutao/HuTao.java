@@ -80,6 +80,8 @@ public class HuTao implements ModInitializer {
         variantImages.put("miku", loadVariantImagesFor(variant, 36));
         variantImages.put("aqua", loadVariantImagesFor(variant, 17));
         variantImages.put("hutao", loadVariantImagesFor(variant, 27));
+        variantImages.put("Mai Sakurajima", loadVariantImagesFor(variant, 16));
+
     }
 
     private ResourceLocation[] loadVariantImagesFor(String variant, int count) {
@@ -105,8 +107,9 @@ public class HuTao implements ModInitializer {
         } else if (currentVariant.equals("aqua")) {
             setVariant("hutao");
         } else if (currentVariant.equals("hutao")) {
+            setVariant("Mai Sakurajima");
+        } else if (currentVariant.equals("Mai Sakurajima"));
             setVariant("miku");
-        }
     }
 
     private void setVariant(String variant) {
