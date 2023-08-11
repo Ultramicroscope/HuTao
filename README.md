@@ -1,7 +1,7 @@
 # Better-HuTao
 > Draws a dancing Hu Tao (you are lonely).
 > 
-> The differences between Hu Tao and Better-Hutao are pretty small so I won't take credits all creadits goes to [Ryan](https://github.com/Ultramicroscope/HuTao)
+> The differences between Hu Tao and Better-HuTao are pretty small so I won't take credits all credits goes to [Ryan](https://github.com/Ultramicroscope/HuTao)
  
 ### STILL PROJECT IS STILL IN BETA
 
