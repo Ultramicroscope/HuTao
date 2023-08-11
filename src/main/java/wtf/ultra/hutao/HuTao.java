@@ -108,8 +108,9 @@ public class HuTao implements ModInitializer {
             setVariant("hutao");
         } else if (currentVariant.equals("hutao")) {
             setVariant("MaiSakurajima");
-        } else if (currentVariant.equals("MaiSakurajima"));
+        } else if (currentVariant.equals("MaiSakurajima")) {
             setVariant("miku");
+        }
     }
 
     private void setVariant(String variant) {
