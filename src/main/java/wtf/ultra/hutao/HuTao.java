@@ -1,19 +1,26 @@
 package wtf.ultra.hutao;
 
+import wtf.ultra.hutao.command.toggle;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.client.settings.KeyBinding;
-import net.minecraft.util.ResourceLocation;
-import net.weavemc.loader.api.ModInitializer;
-import net.weavemc.loader.api.event.EventBus;
-import net.weavemc.loader.api.event.RenderGameOverlayEvent;
-import org.lwjgl.input.Keyboard;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.ResourceLocation;
+
+import net.weavemc.loader.api.ModInitializer;
+import net.weavemc.loader.api.event.EventBus;
+import net.weavemc.loader.api.event.RenderGameOverlayEvent;
+import net.weavemc.loader.api.command.CommandBus;
+
+import org.lwjgl.input.Keyboard;
 
 public class HuTao implements ModInitializer {
     private static final String VARIANT_DIRECTORY = ".weave/hutao";
@@ -21,7 +28,16 @@ public class HuTao implements ModInitializer {
     private int frame = 0;
     private String currentVariant = "MaiSakurajima";
     private boolean switchVariantKeyPressed = false;
-    private boolean modActive = true;
+    public static boolean enabled = false;
+
+    public static void setEnabled(boolean value) {
+        enabled = value;
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "HuTao has been " + (enabled ? "enabled" : "disabled") + "."));
+    }
+
+    public static void fatigueFactor(float secondFactor) {
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Variant has been change "));
+    }
 
     @Override
     public void preInit() {
@@ -39,7 +55,7 @@ public class HuTao implements ModInitializer {
         loadVariantImages(currentVariant);
 
         EventBus.subscribe(RenderGameOverlayEvent.Pre.class, event -> {
-            if (modActive) {
+            if (enabled) {
                 Minecraft minecraft = Minecraft.getMinecraft();
                 minecraft.getTextureManager().bindTexture(getCurrentImage());
                 ScaledResolution resolution = new ScaledResolution(minecraft);
@@ -62,7 +78,7 @@ public class HuTao implements ModInitializer {
 
             if (Keyboard.isKeyDown(Keyboard.KEY_I)) {
                 if (!switchVariantKeyPressed) {
-                    modActive = !modActive;
+                    enabled = !enabled;
                 }
                 switchVariantKeyPressed = true;
             } else {
@@ -125,4 +141,6 @@ public class HuTao implements ModInitializer {
     private ResourceLocation getCurrentImage() {
         return getCurrentImages()[frame / 2];
     }
+
+
 }
