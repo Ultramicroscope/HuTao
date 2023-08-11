@@ -7,7 +7,7 @@
 
 ---
 ## Todo
-- Add custom display anime
+- Add custom display 
 - Add commands to the mod so no more keybind
 - Better code and lightweight mod (3/4MB are images)
 
