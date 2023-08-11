@@ -1,6 +1,8 @@
 package wtf.ultra.hutao;
 
-import wtf.ultra.hutao.command.toggle;
+import net.minecraft.command.CommandDebug;
+import wtf.ultra.hutao.command.htswitch;
+import wtf.ultra.hutao.command.httoggle;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -20,27 +22,31 @@ import net.weavemc.loader.api.event.EventBus;
 import net.weavemc.loader.api.event.RenderGameOverlayEvent;
 import net.weavemc.loader.api.command.CommandBus;
 
-import org.lwjgl.input.Keyboard;
 
 public class HuTao implements ModInitializer {
     private static final String VARIANT_DIRECTORY = ".weave/hutao";
     private static final Map<String, ResourceLocation[]> variantImages = new HashMap<>();
     private int frame = 0;
     private String currentVariant = "MaiSakurajima";
-    private boolean switchVariantKeyPressed = false;
+    public static boolean switchVariant = false;
     public static boolean enabled = false;
 
     public static void setEnabled(boolean value) {
         enabled = value;
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "HuTao has been " + (enabled ? "enabled" : "disabled") + "."));
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Better-HuTao has been " + (enabled ? "enabled" : "disabled") + "."));
     }
 
-    public static void fatigueFactor(float secondFactor) {
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Variant has been change "));
+    public static void setSwitchVariant(boolean value) {
+        switchVariant = value;
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Variant has been changed."));
     }
 
     @Override
     public void preInit() {
+
+        System.out.println("[HuTao] Initializing");
+        CommandBus.register(new httoggle());
+        CommandBus.register(new htswitch());
 
         String homeDirectory = System.getProperty("user.home");
         Path externalDirectoryPath = Paths.get(homeDirectory, VARIANT_DIRECTORY, "dance", "custom");
@@ -64,25 +70,7 @@ public class HuTao implements ModInitializer {
                 int y = resolution.getScaledHeight() - h;
                 minecraft.ingameGUI.drawTexturedModalRect(x, y, u, v, w, h);
 
-                if (Keyboard.isKeyDown(Keyboard.KEY_O)) {
-                    if (!switchVariantKeyPressed) {
-                        switchVariant();
-                    }
-                    switchVariantKeyPressed = true;
-                } else {
-                    switchVariantKeyPressed = false;
-                }
-
                 frame = (frame + 1) % (getCurrentImages().length * 2);
-            }
-
-            if (Keyboard.isKeyDown(Keyboard.KEY_I)) {
-                if (!switchVariantKeyPressed) {
-                    enabled = !enabled;
-                }
-                switchVariantKeyPressed = true;
-            } else {
-                switchVariantKeyPressed = false;
             }
         });
     }

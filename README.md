@@ -1,20 +1,22 @@
 # Better-HuTao
 > Draws a dancing Hu Tao (you are lonely).
 > 
-> The differences between Hu Tao and Better-HuTao are pretty small so I won't take credits all credits goes to [Ryan](https://github.com/Ultramicroscope/HuTao)
+> The differences between Hu Tao and Better-HuTao are pretty small so I won't take credits all credits goes to [Ryan](https://github.com/Ultramicroscope/HuTao).
+> 
+> Big Thanks to [Tryfle](https://github.com/Tryflle) for helping me setting up commands.
  
 ### STILL PROJECT IS STILL IN BETA
 
 ---
 ## Todo
-- Add custom display "anime"
-- Add commands to the mod so no more keybind
-- Better code and lightweight mod (3/4MB are images)
+- Add custom display "anime".
+- ~~Add commands to the mod so no more keybind~~.
+- Better code and lightweight mod (3/4MB are images).
 
 
 ## Usage
-- You can change the display image using the "o" keybind
-- You can disable/enable the mod by using the "i" keybind
+- You can change the display image using /htswitch command.
+- You can disable/enable the mod by using /httoggle command.
 
 ---
 

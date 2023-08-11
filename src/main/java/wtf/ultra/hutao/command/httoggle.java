@@ -3,11 +3,12 @@ package wtf.ultra.hutao.command;
 import net.weavemc.loader.api.command.Command;
 import org.jetbrains.annotations.NotNull;
 
-import static wtf.ultra.hutao.HuTao.*;
+import static wtf.ultra.hutao.HuTao.enabled;
+import static wtf.ultra.hutao.HuTao.setEnabled;
 
-public class toggle extends Command {
-    public toggle() {
-        super("toggle");
+public class httoggle extends Command {
+    public httoggle() {
+        super("httoggle");
     }
 
     @Override

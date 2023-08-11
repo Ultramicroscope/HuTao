@@ -1,5 +1,14 @@
 {
   "entrypoints": [
     "wtf.ultra.hutao.HuTao"
-  ]
+  ],
+
+  "about": {
+    "name": "Better-HuTao",
+    "version": "1.0.4",
+    "author": "Ryan",
+    "description": "Draws a dancing Hu Tao",
+    "website": "https://github.com/cranci1/Better-HuTao"
+  }
+
 }
