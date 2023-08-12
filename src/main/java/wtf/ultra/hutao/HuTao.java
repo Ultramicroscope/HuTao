@@ -1,8 +1,8 @@
 package wtf.ultra.hutao;
 
-import net.minecraft.command.CommandDebug;
-import wtf.ultra.hutao.command.htswitch;
 import wtf.ultra.hutao.command.httoggle;
+
+import org.lwjgl.input.Keyboard;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
 
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.ChatComponentText;
@@ -22,13 +23,12 @@ import net.weavemc.loader.api.event.EventBus;
 import net.weavemc.loader.api.event.RenderGameOverlayEvent;
 import net.weavemc.loader.api.command.CommandBus;
 
-
 public class HuTao implements ModInitializer {
     private static final String VARIANT_DIRECTORY = ".weave/hutao";
     private static final Map<String, ResourceLocation[]> variantImages = new HashMap<>();
     private int frame = 0;
-    private String currentVariant = "MaiSakurajima";
-    public static boolean switchVariant = false;
+    public String currentVariant = "MaiSakurajima";
+    private boolean switchVariantKeyPressed = false;
     public static boolean enabled = false;
 
     public static void setEnabled(boolean value) {
@@ -36,17 +36,12 @@ public class HuTao implements ModInitializer {
         Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Better-HuTao has been " + (enabled ? "enabled" : "disabled") + "."));
     }
 
-    public static void setSwitchVariant(boolean value) {
-        switchVariant = value;
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Variant has been changed."));
-    }
 
     @Override
     public void preInit() {
 
         System.out.println("[HuTao] Initializing");
         CommandBus.register(new httoggle());
-        CommandBus.register(new htswitch());
 
         String homeDirectory = System.getProperty("user.home");
         Path externalDirectoryPath = Paths.get(homeDirectory, VARIANT_DIRECTORY, "dance", "custom");
@@ -70,6 +65,15 @@ public class HuTao implements ModInitializer {
                 int y = resolution.getScaledHeight() - h;
                 minecraft.ingameGUI.drawTexturedModalRect(x, y, u, v, w, h);
 
+                if (Keyboard.isKeyDown(Keyboard.KEY_O)) {
+                    if (!switchVariantKeyPressed) {
+                        switchVariant();
+                    }
+                    switchVariantKeyPressed = true;
+                } else {
+                    switchVariantKeyPressed = false;
+                }
+
                 frame = (frame + 1) % (getCurrentImages().length * 2);
             }
         });
@@ -85,13 +89,14 @@ public class HuTao implements ModInitializer {
         variantImages.put("aqua", loadVariantImagesFor(variant, 17));
         variantImages.put("hutao", loadVariantImagesFor(variant, 27));
         variantImages.put("MaiSakurajima", loadVariantImagesFor(variant, 16));
+        variantImages.put("paimon", loadVariantImagesFor(variant, 198));
 
     }
 
     private ResourceLocation[] loadVariantImagesFor(String variant, int count) {
         String filePathFormat;
-        if (variant.equals("custom")) {
-            filePathFormat = ".weave/hutao/dance/custom/dance%d.png";
+        if (variant.equals("paimon")) {
+            filePathFormat = "hutao/dance/paimon.gif";
         } else {
             filePathFormat = "hutao/dance/" + variant + "/dance%d.png";
         }
@@ -113,11 +118,13 @@ public class HuTao implements ModInitializer {
         } else if (currentVariant.equals("hutao")) {
             setVariant("MaiSakurajima");
         } else if (currentVariant.equals("MaiSakurajima")) {
+            setVariant("paimon");
+        } else if (currentVariant.equals("paimon")) {
             setVariant("miku");
         }
     }
 
-    private void setVariant(String variant) {
+    public void setVariant(String variant) {
         currentVariant = variant;
         loadVariantImages(currentVariant);
     }
@@ -129,6 +136,5 @@ public class HuTao implements ModInitializer {
     private ResourceLocation getCurrentImage() {
         return getCurrentImages()[frame / 2];
     }
-
 
 }
