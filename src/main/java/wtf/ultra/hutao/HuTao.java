@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
 
-import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.ChatComponentText;
