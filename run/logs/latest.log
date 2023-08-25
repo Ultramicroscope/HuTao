@@ -1,0 +1,1285 @@
+[22:30:09] [main/INFO]: Extra: []
+[22:30:09] [main/INFO]: Found and added coremod: me.djtheredstoner.devauth.forge.legacy.DevAuthLoadingPlugin
+[22:30:09] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Ryan/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[22:30:09] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:30:09] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:30:09] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:30:09] [main/INFO]: Forge Mod Loader version 11.15.1.2318 for Minecraft 1.8.9 loading
+[22:30:09] [main/INFO]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_372, running on Windows 11:amd64:10.0, installed at C:\Users\Ryan\.gradle\jdks\adoptium-8-x64-hotspot-windows\jdk8u372-b07\jre
+[22:30:09] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[22:30:09] [main/INFO]: Found a command line coremod : me.djtheredstoner.devauth.forge.legacy.DevAuthLoadingPlugin
+[22:30:09] [main/WARN]: The coremod me.djtheredstoner.devauth.forge.legacy.DevAuthLoadingPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:30:09] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[22:30:09] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[22:30:09] [main/INFO]: Injecting location in coremod me.djtheredstoner.devauth.forge.legacy.DevAuthLoadingPlugin
+[22:30:09] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:30:09] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:30:09] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:30:09] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[22:30:09] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:30:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:30:10] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:30:10] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:30:10] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:30:10] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[22:30:10] [main/INFO]: Successfully logged in as honeyfuggle
+[22:30:10] [Client thread/INFO]: Setting user: honeyfuggle
+[22:30:12] [Client thread/INFO]: LWJGL Version: 2.9.4
+[22:30:12] [Client thread/WARN]: =============================================================
+[22:30:12] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[22:30:12] [Client thread/WARN]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
+[22:30:12] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
+[22:30:12] [Client thread/WARN]: =============================================================
+[22:30:12] [Client thread/INFO]: [net.minecraftforge.fml.client.SplashProgress:start:246]: ---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 8/24/23 10:30 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_372, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 455980616 bytes (434 MB) / 579338240 bytes (552 MB) up to 3801088000 bytes (3625 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+DevAuthLoadingPlugin (DevAuth-forge-legacy-1.1.0.jar)
+  me.djtheredstoner.devauth.forge.legacy.ClassTransformer
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.6.0 Compatibility Profile Context 23.Q1.1.230424' Renderer: 'AMD Radeon RX 6700 XT'
+[22:30:12] [Client thread/INFO]: MinecraftForge v11.15.1.2318 Initialized
+[22:30:12] [Client thread/INFO]: Replaced 229 ore recipies
+[22:30:12] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[22:30:12] [Client thread/INFO]: Searching C:\mc\forge\1.8.9\fun\Hu Tao\run\mods for mods
+[22:30:13] [Client thread/INFO]: Forge Mod Loader has identified 4 mods to load
+[22:30:13] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, hutao] at CLIENT
+[22:30:13] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, hutao] at SERVER
+[22:30:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hu Tao
+[22:30:13] [Client thread/INFO]: Processing ObjectHolder annotations
+[22:30:13] [Client thread/INFO]: Found 384 ObjectHolder annotations
+[22:30:13] [Client thread/INFO]: Identifying ItemStackHolder annotations
+[22:30:13] [Client thread/INFO]: Found 0 ItemStackHolder annotations
+[22:30:13] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[22:30:13] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[22:30:13] [Client thread/INFO]: Applying holder lookups
+[22:30:13] [Client thread/INFO]: Holder lookups applied
+[22:30:13] [Client thread/INFO]: Injecting itemstacks
+[22:30:13] [Client thread/INFO]: Itemstack injection complete
+[22:30:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:30:14] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[22:30:14] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:30:14] [Thread-9/INFO]: OpenAL initialized.
+[22:30:14] [Sound Library Loader/INFO]: Sound engine started
+[22:30:15] [Client thread/INFO]: Max texture size: 16384
+[22:30:15] [Client thread/INFO]: Created: 16x16 textures-atlas
+[22:30:16] [Client thread/INFO]: Injecting itemstacks
+[22:30:16] [Client thread/INFO]: Itemstack injection complete
+[22:30:16] [Client thread/INFO]: Forge Mod Loader has successfully loaded 4 mods
+[22:30:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Hu Tao
+[22:30:16] [Client thread/INFO]: SoundSystem shutting down...
+[22:30:16] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[22:30:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:30:16] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[22:30:16] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:30:16] [Thread-11/INFO]: OpenAL initialized.
+[22:30:17] [Sound Library Loader/INFO]: Sound engine started
+[22:30:18] [Client thread/INFO]: Max texture size: 16384
+[22:30:18] [Client thread/INFO]: Created: 512x512 textures-atlas
+[22:30:22] [Client thread/INFO]: Connecting to mc.hypixel.net, 25565
+[22:30:23] [Netty Client IO #0/INFO]: Server FML protocol version 1, no additional data received
+[22:30:23] [Netty Client IO #0/INFO]: Server protocol version 1
+[22:30:23] [Netty Client IO #0/INFO]: Attempting connection with missing mods [mcp, FML, Forge, hutao] at SERVER
+[22:30:23] [Netty Client IO #0/INFO]: Injecting existing block and item data into this client instance
+[22:30:23] [Netty Client IO #0/INFO]: Applying holder lookups
+[22:30:23] [Netty Client IO #0/INFO]: Holder lookups applied
+[22:30:23] [Netty Client IO #0/INFO]: [Netty Client IO #0] Client side modded connection established
+[22:30:24] [Client thread/INFO]: [CHAT]                                      
+[22:30:24] [Client thread/INFO]: [CHAT]                          
+[22:30:24] [Client thread/INFO]: [CHAT] §b[MVP§0+§b] honeyfuggle§f §6joined the lobby!
+[22:30:24] [Client thread/INFO]: [CHAT] §aYou have §b2 §aunclaimed leveling rewards!
+[22:30:24] [Client thread/INFO]: [CHAT] §eClick here to view them!
+[22:30:24] [Client thread/INFO]: [CHAT] §aYou have §63 §aunclaimed achievement rewards!
+[22:30:24] [Client thread/INFO]: [CHAT] §eClick here to view them!
+[22:30:24] [Client thread/INFO]: [CHAT] --------------  Guild: Message Of The Day  --------------
+[22:30:24] [Client thread/INFO]: [CHAT] | ?The Omen?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? Always make new people feel welcomed! ?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? Be respectful at all times! ?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? Being chatty and active is appreciated! ?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? 1+ week of inactivity = kick, unless given notice! ?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? Excessive use of capital letters is greatly discouraged! ?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? Profanity is allowed, while keeping it clean! ?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? Any questions may be directed to DirtyAvocado! ?
+[22:30:24] [Client thread/INFO]: [CHAT] | ? Requirements are Network level 75+ and verification in /g discord ?
+[22:30:24] [Client thread/INFO]: [CHAT] -----------------------------------------------------
+[22:30:25] [Client thread/INFO]: [CHAT] §b[MVP§3+§b] ItsRazerGaming§f §6joined the lobby!
+[22:30:27] [Client thread/INFO]: [CHAT] §b[MVP§d+§b] 5woosh§f §6joined the lobby!
+[22:30:27] [Client thread/INFO]: [CHAT] §b[MVP§f+§b] PeterRsTc§f §6joined the lobby!
+[22:30:28] [Client thread/INFO]: [CHAT] Sending you to mini188AP!
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeObjective(SourceFile:179) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleScoreboardObjective(NetHandlerPlayClient.java:1715) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3BPacketScoreboardObjective.processPacket(SourceFile:54) ~[S3BPacketScoreboardObjective.class:?]
+	at net.minecraft.network.play.server.S3BPacketScoreboardObjective.processPacket(SourceFile:10) ~[S3BPacketScoreboardObjective.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:45) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1014) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_372]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removeTeam(SourceFile:229) ~[Scoreboard.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1813) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:113) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(SourceFile:13) ~[S3EPacketTeams.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_372]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_372]
+	at net.minecraft.util.Util.runTask(SourceFile:44) ~[Util.class:?]
+	... 15 more
+[22:30:29] [Client thread/INFO]: [CHAT]        
+[22:30:29] [Client thread/INFO]: [CHAT] honeyfuggle has joined (1/8)!
+[22:30:29] [Client thread/INFO]: [CHAT] 
+[22:30:29] [Client thread/INFO]: [CHAT] 3 more players are required for the game to start.
+[22:30:29] [Client thread/INFO]: [CHAT] 
+[22:30:31] [Client thread/INFO]: [CHAT] From [MVP++] ChickenPants88: arena?
+[22:30:34] [Client thread/INFO]: [CHAT] To [MVP++] ChickenPants88: nrn
+[22:30:42] [Client thread/INFO]: Applying holder lookups
+[22:30:42] [Client thread/INFO]: Holder lookups applied
+[22:30:42] [Client thread/INFO]: Stopping!
+[22:30:42] [Client thread/INFO]: SoundSystem shutting down...
+[22:30:42] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

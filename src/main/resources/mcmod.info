@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hutao",
+  "name": "Hu Tao",
+  "description": "Dancing Hu Tao.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["honeyfuggle"],
+  "credits": "",
+  "logoFile": "icon.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
