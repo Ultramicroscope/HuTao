@@ -109,23 +109,21 @@ public class HuTao implements ModInitializer {
         variantImages.put("aqua", loadVariantImagesFor(variant, 17));
         variantImages.put("hutao", loadVariantImagesFor(variant, 27));
         variantImages.put("MaiSakurajima", loadVariantImagesFor(variant, 16));
-        variantImages.put("custom", loadVariantImagesFor(variant, 20));
     }
 
     private ResourceLocation[] loadVariantImagesFor(String variant, int count) {
+        String filePathFormat;
+        if (variant.equals("custom")) {
+            filePathFormat = "";
+        } else {
+            filePathFormat = "hutao/dance/" + variant + "/dance%d.png";
+        }
+
         ResourceLocation[] images = new ResourceLocation[count];
 
-        if (variant.equals("custom")) {
-            String customPath = VARIANT_DIRECTORY + "/dance/custom/dance%d.png";
-            IntStream.range(0, count).forEach(i ->
-                    images[i] = new ResourceLocation(String.format(customPath, i + 1))
-            );
-        } else {
-            String filePathFormat = "hutao/dance/" + variant + "/dance%d.png";
-            IntStream.range(0, count).forEach(i ->
-                    images[i] = new ResourceLocation(String.format(filePathFormat, i + 1))
-            );
-        }
+        IntStream.range(0, count).forEach(i ->
+                images[i] = new ResourceLocation(String.format(filePathFormat, i + 1))
+        );
 
         return images;
     }
@@ -138,9 +136,8 @@ public class HuTao implements ModInitializer {
         } else if (currentVariant.equals("hutao")) {
             setVariant("MaiSakurajima");
         } else if (currentVariant.equals("MaiSakurajima")) {
-            setVariant("custom");
-        } else if (currentVariant.equals("custom"))
             setVariant("miku");
+        }
     }
 
     public void setVariant(String variant) {
