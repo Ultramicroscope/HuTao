@@ -1,5 +1,6 @@
 package wtf.ultra.hutao;
 
+import wtf.ultra.hutao.command.htcustom;
 import wtf.ultra.hutao.command.httoggle;
 
 import org.lwjgl.input.Keyboard;
@@ -21,10 +22,11 @@ import net.weavemc.loader.api.event.RenderGameOverlayEvent;
 import net.weavemc.loader.api.command.CommandBus;
 
 public class HuTao implements ModInitializer {
-    private static final String VARIANT_DIRECTORY = ".weave/hutao";
+    private static final String VARIANT_DIRECTORY = ".weave/hutao/";
     private static final Map<String, ResourceLocation[]> variantImages = new HashMap<>();
+    public static int customImage = 20;
     private int frame = 0;
-    public String currentVariant = "MaiSakurajima";
+    public String currentVariant = "hutao";
     private boolean switchVariantKeyPressed = false;
     public static boolean enabled = false;
 
@@ -33,10 +35,16 @@ public class HuTao implements ModInitializer {
         Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Better-HuTao has been " + (enabled ? "enabled" : "disabled") + "."));
     }
 
+    public static void customImage(int secondFactor) {
+        customImage = secondFactor;
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Custom frame set to: " + customImage));
+    }
+
     @Override
     public void preInit() {
         System.out.println("[HuTao] Initializing");
         CommandBus.register(new httoggle());
+        CommandBus.register(new htcustom());
 
         String homeDirectory = System.getProperty("user.home");
         Path externalDirectoryPath = Paths.get(homeDirectory, VARIANT_DIRECTORY, "dance", "custom");
@@ -50,31 +58,6 @@ public class HuTao implements ModInitializer {
 
         loadVariantImages(currentVariant);
 
-        // Start a new thread to watch for image file changes
-        Thread watchThread = new Thread(() -> {
-            try {
-                WatchService watchService = FileSystems.getDefault().newWatchService();
-                externalDirectoryPath.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY);
-
-                while (true) {
-                    WatchKey key = watchService.take();
-                    for (WatchEvent<?> event : key.pollEvents()) {
-                        Path changedFilePath = (Path) event.context();
-                        if (changedFilePath.getFileName().toString().endsWith(".png")) {
-                            System.out.println("Image file changed: " + changedFilePath);
-                            loadVariantImages(currentVariant);
-                        }
-                    }
-                    key.reset();
-                    Thread.sleep(20000); // Sleep for 20 seconds
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-
-        watchThread.start();
-
         EventBus.subscribe(RenderGameOverlayEvent.Pre.class, event -> {
             if (enabled) {
                 Minecraft minecraft = Minecraft.getMinecraft();
@@ -84,6 +67,7 @@ public class HuTao implements ModInitializer {
                 int x = resolution.getScaledWidth() - w;
                 int y = resolution.getScaledHeight() - h;
                 minecraft.ingameGUI.drawTexturedModalRect(x, y, u, v, w, h);
+                frame = (frame + 1) % (getCurrentImages().length);
 
                 if (Keyboard.isKeyDown(Keyboard.KEY_O)) {
                     if (!switchVariantKeyPressed) {
@@ -93,8 +77,6 @@ public class HuTao implements ModInitializer {
                 } else {
                     switchVariantKeyPressed = false;
                 }
-
-                frame = (frame + 1) % (getCurrentImages().length * 2);
             }
         });
     }
@@ -105,16 +87,15 @@ public class HuTao implements ModInitializer {
     }
 
     private void loadVariantImages(String variant) {
-        variantImages.put("miku", loadVariantImagesFor(variant, 36));
-        variantImages.put("aqua", loadVariantImagesFor(variant, 17));
         variantImages.put("hutao", loadVariantImagesFor(variant, 27));
-        variantImages.put("MaiSakurajima", loadVariantImagesFor(variant, 16));
+        variantImages.put("aqua", loadVariantImagesFor(variant, customImage));
+        variantImages.put("custom", loadVariantImagesFor(variant, 10));
     }
 
     private ResourceLocation[] loadVariantImagesFor(String variant, int count) {
         String filePathFormat;
         if (variant.equals("custom")) {
-            filePathFormat = "";
+            filePathFormat = VARIANT_DIRECTORY + "dance/custom/dance%d";
         } else {
             filePathFormat = "hutao/dance/" + variant + "/dance%d.png";
         }
@@ -129,14 +110,12 @@ public class HuTao implements ModInitializer {
     }
 
     private void switchVariant() {
-        if (currentVariant.equals("miku")) {
+        if (currentVariant.equals("hutao")) {
+            setVariant("custom");
+        } else if (currentVariant.equals("custom")) {
             setVariant("aqua");
         } else if (currentVariant.equals("aqua")) {
             setVariant("hutao");
-        } else if (currentVariant.equals("hutao")) {
-            setVariant("MaiSakurajima");
-        } else if (currentVariant.equals("MaiSakurajima")) {
-            setVariant("miku");
         }
     }
 
