@@ -1,3 +1,6 @@
+---
+Lost motivation so i wont continue working on this the last version so 1.0.4 should work perfectly fine.
+
 # Better-HuTao
 > Draws a dancing Hu Tao (you are lonely).
 > 
