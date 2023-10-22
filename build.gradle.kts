@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "wtf.ultra"
-version = "1.0.6"
+version = "1.0"
 
 minecraft.version("1.8.9")
 
@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.weave-mc:weave-loader:70bd82faa6")
+    compileOnly("com.github.weave-mc:weave-loader:1246af816e")
 
     compileOnly("org.spongepowered:mixin:0.8.5")
 }

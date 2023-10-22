@@ -1,134 +1,65 @@
 package wtf.ultra.hutao;
 
-import wtf.ultra.hutao.command.htcustom;
 import wtf.ultra.hutao.command.httoggle;
-
-import org.lwjgl.input.Keyboard;
-
-import java.nio.file.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.IntStream;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.ResourceLocation;
 
 import net.weavemc.loader.api.ModInitializer;
 import net.weavemc.loader.api.event.EventBus;
 import net.weavemc.loader.api.event.RenderGameOverlayEvent;
 import net.weavemc.loader.api.command.CommandBus;
 
+import java.util.stream.IntStream;
+
+@SuppressWarnings("unused")
 public class HuTao implements ModInitializer {
-    private static final String VARIANT_DIRECTORY = ".weave/hutao/";
-    private static final Map<String, ResourceLocation[]> variantImages = new HashMap<>();
-    public static int customImage = 20;
+    private static final ResourceLocation[] images;
+    private final long mspf = 100;
+    private long instant = 0;
     private int frame = 0;
-    public String currentVariant = "hutao";
-    private boolean switchVariantKeyPressed = false;
-    public static boolean enabled = false;
+    public static boolean enabled = false; // The mode by default is off
 
     public static void setEnabled(boolean value) {
         enabled = value;
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Better-HuTao has been " + (enabled ? "enabled" : "disabled") + "."));
-    }
-
-    public static void customImage(int secondFactor) {
-        customImage = secondFactor;
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "Custom frame set to: " + customImage));
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "HuTao has been " + (enabled ? "enabled" : "disabled") + ".")); // You can set the text for when the mod is enabled/disabled
     }
 
     @Override
     public void preInit() {
+
         System.out.println("[HuTao] Initializing");
-        CommandBus.register(new httoggle());
-        CommandBus.register(new htcustom());
-
-        String homeDirectory = System.getProperty("user.home");
-        Path externalDirectoryPath = Paths.get(homeDirectory, VARIANT_DIRECTORY, "dance", "custom");
-
-        try {
-            Files.createDirectories(externalDirectoryPath);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return;
-        }
-
-        loadVariantImages(currentVariant);
+        CommandBus.register(new httoggle()); // command name
 
         EventBus.subscribe(RenderGameOverlayEvent.Pre.class, event -> {
             if (enabled) {
-                Minecraft minecraft = Minecraft.getMinecraft();
-                minecraft.getTextureManager().bindTexture(getCurrentImage());
-                ScaledResolution resolution = new ScaledResolution(minecraft);
+                long now;
+                if ((now = System.currentTimeMillis()) - instant >= mspf) {
+                    instant = now;
+                    frame = (frame + 1) % images.length;
+                }
+
+                Minecraft mc = Minecraft.getMinecraft();
+                mc.getTextureManager().bindTexture(images[frame]);
+                ScaledResolution resolution = new ScaledResolution(mc);
                 int w = 256, h = 256, u = 0, v = 0;
                 int x = resolution.getScaledWidth() - w;
                 int y = resolution.getScaledHeight() - h;
-                minecraft.ingameGUI.drawTexturedModalRect(x, y, u, v, w, h);
-                frame = (frame + 1) % (getCurrentImages().length);
-
-                if (Keyboard.isKeyDown(Keyboard.KEY_O)) {
-                    if (!switchVariantKeyPressed) {
-                        switchVariant();
-                    }
-                    switchVariantKeyPressed = true;
-                } else {
-                    switchVariantKeyPressed = false;
-                }
+                mc.ingameGUI.drawTexturedModalRect(x, y, u, v, w, h);
             }
         });
+    }
+
+    static {
+        images = new ResourceLocation[27];
+        IntStream.range(0, 27).forEach(i -> images[i] = new ResourceLocation(String.format("hutao/dance/dance%d.png", i + 1)));
     }
 
     public static void main(String[] args) {
         ModInitializer mod = new HuTao();
         mod.preInit();
-    }
-
-    private void loadVariantImages(String variant) {
-        variantImages.put("hutao", loadVariantImagesFor(variant, 27));
-        variantImages.put("aqua", loadVariantImagesFor(variant, customImage));
-        variantImages.put("custom", loadVariantImagesFor(variant, 10));
-    }
-
-    private ResourceLocation[] loadVariantImagesFor(String variant, int count) {
-        String filePathFormat;
-        if (variant.equals("custom")) {
-            filePathFormat = VARIANT_DIRECTORY + "dance/custom/dance%d";
-        } else {
-            filePathFormat = "hutao/dance/" + variant + "/dance%d.png";
-        }
-
-        ResourceLocation[] images = new ResourceLocation[count];
-
-        IntStream.range(0, count).forEach(i ->
-                images[i] = new ResourceLocation(String.format(filePathFormat, i + 1))
-        );
-
-        return images;
-    }
-
-    private void switchVariant() {
-        if (currentVariant.equals("hutao")) {
-            setVariant("custom");
-        } else if (currentVariant.equals("custom")) {
-            setVariant("aqua");
-        } else if (currentVariant.equals("aqua")) {
-            setVariant("hutao");
-        }
-    }
-
-    public void setVariant(String variant) {
-        currentVariant = variant;
-        loadVariantImages(currentVariant);
-    }
-
-    private ResourceLocation[] getCurrentImages() {
-        return variantImages.get(currentVariant);
-    }
-
-    private ResourceLocation getCurrentImage() {
-        return getCurrentImages()[frame / 2];
     }
 }
